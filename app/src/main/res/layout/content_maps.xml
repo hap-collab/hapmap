@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/tools">
+
+
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+<!--    <DatePicker
+        android:id="@+id/eventDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/bpWhite"
+        android:layout_above="@+id/linearLayout" />-->
+    <!--android:layout_alignTop="@id/map"-->
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/list_btn"
+        style="@style/Switch_Main_List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/new_event_floating_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/icn_plus"
+        android:layout_margin="16dp"
+        />
+
+    <!--LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:dsb_indicatorColor="@android:color/white"
+            app:dsb_indicatorTextAppearance="@style/DiscreteSeekBar_Textview"
+            app:dsb_max="46"
+            app:dsb_min="0"
+            app:dsb_progressColor="@color/colorPrimary"
+            app:dsb_scrubberHeight="5dp"
+            app:dsb_trackColor="@color/colorPrimary"
+            app:dsb_trackHeight="5dp"
+            app:dsb_value="15" />
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout-->
+
+    <!--ImageView
+        android:id="@+id/buttonPickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icn_calendar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" /-->
+
+    <TextView
+        android:id="@+id/expandCollpaseTextViewDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="TEST"
+        android:textStyle="bold"/>
+
+    <!--LinearLayout
+        android:id="@+id/calendarLinearWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.azurechen.fcalendar.widget.FlexibleCalendar
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/todayEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:background="@color/bpTransparent"
+                android:text="@string/Today_button"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/expandCollpase"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/todayEvents"
+                android:layout_toStartOf="@+id/abortCalendar">
+
+                <ImageView
+                    android:id="@+id/expandCollpaseImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/abortCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:background="@color/bpTransparent"
+                android:layout_gravity="end"
+                android:layout_alignParentEnd="true"
+                android:text="@string/Cancel_button"/>
+
+        </RelativeLayout>
+
+    </LinearLayout-->
+
+<!--    <com.wefika.calendar.CollapseCalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:background="@color/bpWhite" />-->
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_map_foreground"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/tv_address"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+
+    <!--&gt;-->
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab_recent"-->
+    <!--style="@style/floating_action_button"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--app:fabSize="mini"-->
+    <!--android:visibility="gone"-->
+    <!--android:src="@drawable/ic_search_grey"-->
+    <!--app:backgroundTint="@color/white" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_marker"-->
+    <!--android:layout_width="45dp"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:layout_gravity="bottom|center_horizontal"-->
+    <!--android:background="@drawable/ic_marker"-->
+    <!--android:paddingBottom="18dp"-->
+    <!--android:paddingEnd="2dp"-->
+    <!--android:paddingStart="2dp"-->
+    <!--android:paddingTop="2dp"-->
+    <!--android:src="@drawable/picture_placeholder" />-->
+    <!--</FrameLayout>-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--tools:ignore="UselessLeaf" />-->
+    <!--</LinearLayout>-->
+
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab_show_current_location"-->
+    <!--style="@style/floating_action_button"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/ic_target"-->
+    <!--app:backgroundTint="@color/white"-->
+    <!--app:fabSize="mini"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_below="@+id/tv_address"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginTop="14dp" />-->
+
+</RelativeLayout>

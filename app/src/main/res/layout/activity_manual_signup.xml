@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_manual_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ViewSwitcher
+        android:id="@+id/manual_signup_viewswitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <include layout="@layout/login_manually_choose_gender">
+        </include>
+
+        <include layout="@layout/login_manually_choose_age">
+        </include>
+
+    </ViewSwitcher>
+
+</RelativeLayout>

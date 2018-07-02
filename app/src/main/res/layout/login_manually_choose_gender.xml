@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/TextView_Large_White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/choose_gender"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/female_btn"
+            style="@style/Base.TextAppearance.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="center"
+                android:src="@drawable/icn_female" />
+
+            <TextView
+                android:id="@+id/tv_female"
+                style="@style/TextView_Large_White"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:gravity="center"
+                android:text="@string/female"
+                android:textAllCaps="true" />
+
+            <ImageView
+                android:id="@+id/female_v"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="center"
+                android:src="@drawable/icn_v"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/male_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="center"
+                android:src="@drawable/icn_male" />
+
+            <TextView
+                android:id="@+id/tv_male"
+                style="@style/TextView_Large_White"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:gravity="center"
+                android:text="@string/male"
+                android:textAllCaps="true" />
+
+            <ImageView
+                android:id="@+id/male_v"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="center"
+                android:src="@drawable/icn_v"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

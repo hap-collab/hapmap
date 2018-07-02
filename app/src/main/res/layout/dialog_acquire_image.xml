@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/dialog_create_event_start_end_margin"
+        android:paddingStart="@dimen/dialog_create_event_start_end_margin">
+
+        <TextView
+            android:id="@+id/tv_acquire_image_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/create_new_event"
+            android:textColor="@android:color/white" /> <!--            android:layout_height="match_parent"
+-->
+        <TextView
+            android:id="@+id/tv_acquire_image_cur_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/create_new_event"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--android:padding="@dimen/dialog_create_event_start_end_margin"-->
+
+        <LinearLayout
+            android:id="@+id/take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dialog_create_event_start_end_margin"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icn_camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dialog_create_event_start_end_margin"
+                android:text="@string/AcquireImage_TakePhoto" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upload_existing_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dialog_create_event_start_end_margin"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icn_attach" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dialog_create_event_start_end_margin"
+                android:text="@string/AcquireImage_PickExisting" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

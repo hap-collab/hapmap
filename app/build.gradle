@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.hippotec.mapsapplication"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 16
+        versionName "1.0.16"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:multidex:1.0.1'
+    //compile 'com.android.support:multidex:25.3.1'
+    //android support
+    implementation 'com.android.support:appcompat-v7:27.1.1' // 25.3.1
+    implementation 'com.android.support:design:27.1.1' // 25.3.1
+    implementation 'com.android.support:recyclerview-v7:27.1.1' // 25.3.1
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    //compile 'com.google.android.gms:play-services:10.2.4'
+    implementation 'com.google.android.gms:play-services:11.6.2' // was 10.2.4
+    implementation 'com.google.android.gms:play-services-places:11.6.2' // was 10.2.4
+    testCompile 'junit:junit:4.12'
+    //compile 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //api lib
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    // Views injection through annotations
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //Facebook SDK
+    implementation 'com.facebook.android:facebook-android-sdk:4.20.0'
+    //betterpickers for date and time pickers
+    implementation 'com.code-troopers.betterpickers:library:3.1.0'
+    //Seekbar
+    implementation 'org.adw.library:discrete-seekbar:1.0.1'
+    //Progress view
+    implementation 'com.github.rey5137:material:1.2.4'
+    /*    compile 'com.wefika:collapse-calendar-view:0.1.0'*/
+    implementation project(path: ':library')
+
+    implementation project(':camerakit')
+}
+

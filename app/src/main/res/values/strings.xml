@@ -1,0 +1,56 @@
+<resources>
+    <string name="key_position">Position</string>
+    <string name="key_holder">Holder</string>
+
+    <string name="app_name">Maps POC</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="facebook_app_id" translatable="false">148673142326131</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+
+    <string name="permission_storage_request">Please, allow app to read &amp; write to external storage</string>
+    <string name="permission_gps_request">Please, grant Access Location permission to app.</string>
+    <string name="skip_with_underline">skip<u>underline</u>.</string>
+    <string name="choose_gender">Choose Gender</string>
+    <string name="choose_age">Choose Age</string>
+    <!--string name="permission_phone_state_request">Please, grant Phone state permission to app. Without it app cannot get your IMEI (device id)</string-->
+    <string name="hint_event_name">Event name</string>
+    <string name="hint_description">Description</string>
+    <string name="date">Date</string>
+    <string name="starts_at">Starts at</string>
+    <string name="add_cover_photo">Add photo cover</string>
+    <string name="ends_at">Ends at</string>
+    <string name="create_new_event">Create new Event</string>
+    <string name="create">Create</string>
+    <string name="totalCount">Total</string>
+    <string name="age">Age</string>
+    <string name="in">in</string>
+    <string name="hours">hours</string>
+    <string name="minutes">minutes</string>
+    <string name="skip">skip</string>
+    <string name="next">Next</string>
+    <string name="female">female</string>
+    <string name="male">male</string>
+
+
+    <string name="Today_button">Today</string>
+    <string name="Cancel_button">Cancel</string>
+    <string name="SampleTxt_PopulationDemogrpahic">Total: 85 | Age: 27-48</string>
+    <string name="SampleTxt_PercentageMale">62%</string>
+    <string name="SampleTxt_PercentageFemale">48%</string>
+    <string name="NoEventTitle">Click to name this event!</string>
+    <string name="NoEventDesc">Click to describe this event!</string>
+    <string name="ImageDesc_send_comment">send comment</string>
+    <string name="SampleTxt_event_time">21:00 - 23:30</string>
+    <string name="ImageDesc_add_photo">add photo</string>
+    <string name="ImageDesc_females_percentage">females percentage</string>
+    <string name="ImageDesc_males_percentage">males percentage</string>
+    <string name="ImageDesc_event_time">event time</string>
+    <string name="hint_guessing_the_place">Guessing the place...</string>
+    <string name="hint_cant_guess_place">Can't guess the place :(</string>
+    <string name="AcquireImage_TakePhoto">Take new photo</string>
+    <string name="AcquireImage_PickExisting">Upload existing photo</string>
+
+</resources>

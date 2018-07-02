@@ -1,0 +1,126 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+         <item name="android:windowBackground">@null</item>
+    </style>
+
+
+
+
+    <style name="TextView_Mid_Grey" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/event_text_grey</item>
+        <item name="android:textSize">@dimen/mid_text_size</item>
+    </style>
+
+    <style name="TextView_Large_White" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="TextView_Very_Large_White" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/very_large_text_size</item>
+    </style>
+
+
+
+
+    <style name="TextView_Mid_Blue" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/mid_text_size</item>
+    </style>
+
+    <style name="TextView_Large_Blue" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="TextView_Very_Large_Blue" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/very_large_text_size</item>
+    </style>
+
+
+
+
+    <!--<style name="Switch_Like_fragment_event_details" parent="@style/Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:thumb">@android:color/transparent</item>
+        <item name="android:track">@android:color/transparent</item>
+        <item name="android:showText">false</item>
+        <item name="android:background">@drawable/switch_like</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>-->
+
+
+    <style name="Switch_Like" parent="@style/Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:thumb">@android:color/transparent</item>
+        <item name="android:track">@android:color/transparent</item>
+        <item name="android:showText">false</item>
+        <item name="android:background">@drawable/switch_like</item>
+    </style>
+
+
+    <style name="Switch_DisLike" parent="@style/Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:thumb">@android:color/transparent</item>
+        <item name="android:track">@android:color/transparent</item>
+        <item name="android:showText">false</item>
+        <item name="android:background">@drawable/switch_dislike</item>
+    </style>
+
+    <style name="Switch_Main_List" parent="@style/Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:thumb">@android:color/transparent</item>
+        <item name="android:track">@android:color/transparent</item>
+        <item name="android:showText">false</item>
+        <item name="android:background">@drawable/switch_main_list</item>
+    </style>
+
+    <style name="Switch_New_Event" parent="@style/Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:thumb">@android:color/transparent</item>
+        <item name="android:track">@android:color/transparent</item>
+        <item name="android:showText">false</item>
+        <item name="android:background">@drawable/switch_new_event</item>
+    </style>
+
+    <style name="DiscreteSeekBar_Textview" parent="@android:style/Widget.TextView">
+         <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/very_large_text_size</item>
+    </style>
+
+    <style name="Theme.TakePhotoActivity" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/launch_bg</item>
+    </style>
+
+    <style name="Theme.ImagePreviewActivity" parent="AppTheme">
+    </style>
+</resources>

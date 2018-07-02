@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/upload_existing_photo"
+        android:title="Upload existing photo"
+        android:orderInCategory="1" />
+
+    <item
+        android:id="@+id/take_new_photo"
+        android:title="Take new photo"
+        android:orderInCategory="2" />
+
+</menu>

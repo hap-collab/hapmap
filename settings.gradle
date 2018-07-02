@@ -1,0 +1,4 @@
+include ':app', ':library', ':ageselector', ':camerakit-core', ':camerakit-vision', ':camerakit'
+project(':camerakit-core').projectDir = new File('camerakit-android-master/camerakit-core')
+project(':camerakit-vision').projectDir = new File('camerakit-android-master/camerakit-vision')
+project(':camerakit').projectDir = new File('camerakit-android-master/camerakit')

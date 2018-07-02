@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:id="@+id/bottom_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/events_details_divider_grey"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/add_comment_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:rotation="180"
+            android:src="@drawable/ic_send_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/add_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:src="@drawable/icn_attach"/>
+
+        <EditText
+            android:id="@+id/et_add_comment"
+            android:layout_width="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/et_comment_bg"
+            android:layout_marginEnd="@dimen/event_start_end_margin"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/bottom_linear_layout"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/event_details_img"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/colorAccent"
+                android:scaleType="centerCrop"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <RelativeLayout
+                android:id="@+id/ll_like_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorPrimary"
+                >
+                <!--android:padding="10dp"-->
+
+                <TextView
+                    android:id="@+id/tv_likes_count"
+                    style="@style/TextView_Large_White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_toStartOf="@+id/dislike_btn_wrapper"
+                    android:paddingTop="8dp"
+                    />
+                <!--
+                android:layout_alignBottom="@+id/dislike_btn"
+                android:layout_alignTop="@+id/dislike_btn"
+                android:layout_toLeftOf="@+id/dislike_btn"
+                android:layout_toStartOf="@+id/dislike_btn"
+                android:layout_alignBottom="@+id/dislike_btn"
+                android:layout_centerVertical="true"
+                android:layout_alignTop="@+id/dislike_btn"
+                -->
+
+                <RelativeLayout
+                    android:id="@+id/like_btn_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="5dp"
+                    android:layout_toLeftOf="@+id/dislike_btn_wrapper"
+                    android:layout_toStartOf="@+id/dislike_btn_wrapper"
+                    android:paddingLeft="90dp"
+                    android:paddingStart="90dp"
+                    android:paddingBottom="90dp"
+                    android:paddingTop="10dp"
+                    >
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/like_btn"
+                        style="@style/Switch_Like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <!--android:checked="true"-->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dislike_btn_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:paddingStart="5dp"
+                    android:paddingBottom="90dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingEnd="10dp"
+                    >
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/dislike_btn"
+                        style="@style/Switch_DisLike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:paddingStart="@dimen/event_start_end_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/event_start_end_margin"
+                android:layout_marginEnd="@dimen/event_start_end_margin"
+                android:layout_marginTop="@dimen/event_start_end_margin"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/icn_flag" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_event_name"
+                        style="@style/TextView_Large_Blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Summer party" />
+
+                    <TextView
+                        android:id="@+id/tv_event_desc"
+                        style="@style/TextView_Mid_Blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="start"
+                        android:text="Cocktail free party, karayoke free style and the best music till sunset." />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="30dp"
+                android:background="@color/events_details_divider_grey" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/event_start_end_margin"
+                android:layout_marginEnd="@dimen/event_start_end_margin"
+                android:layout_marginTop="@dimen/event_start_end_margin">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/icn_time" />
+
+                <TextView
+                    android:id="@+id/tv_event_time"
+                    style="@style/TextView_Large_Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imageView2"
+
+                    android:gravity="center_vertical"
+                    android:text="21:00 - 23:30" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="30dp"
+                android:background="@color/events_details_divider_grey" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/event_start_end_margin"
+                android:layout_marginEnd="@dimen/event_start_end_margin"
+                android:layout_marginTop="@dimen/event_start_end_margin">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/icn_group" />
+
+                <LinearLayout
+                    android:id="@+id/ll_sex_icons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imageView3">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_female_count"
+                            style="@style/TextView_Mid_Blue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="3dp"
+                            android:text="48%" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icn_female_s" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_male_count"
+                            style="@style/TextView_Mid_Blue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="3dp"
+                            android:text="62%" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icn_male_s" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    style="@style/TextView_Mid_Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/ll_sex_icons"
+                    android:layout_below="@+id/ll_sex_icons"
+                    android:layout_marginTop="5dp"
+                    android:text="Total: 85 | Age: 27-48" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="30dp"
+                android:background="@color/events_details_divider_grey" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/comments_recycler_view"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    
+
+
+</RelativeLayout>

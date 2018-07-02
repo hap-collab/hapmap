@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:id="@+id/bottom_sheet_event_details_container"
+        android:paddingStart="@dimen/event_start_end_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/event_start_end_margin"
+            android:layout_marginEnd="@dimen/event_start_end_margin"
+            android:layout_marginTop="@dimen/event_start_end_margin">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/icn_flag" />
+
+            <TextView
+                android:id="@+id/tv_event_details_name"
+                style="@style/TextView_Large_Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imageView"
+                android:gravity="start|center_vertical"
+                android:text="Summer party" />
+
+            <TextView
+                android:id="@+id/tv_event_details_desc"
+                style="@style/TextView_Mid_Blue"
+                android:layout_width="wrap_content"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_event_details_name"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:text="Cocktail free party, karayoke free style and the best music till sunset." />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:background="@color/events_details_divider_grey" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/event_start_end_margin"
+            android:layout_marginEnd="@dimen/event_start_end_margin"
+            android:layout_marginTop="@dimen/event_start_end_margin">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/icn_time" />
+
+            <TextView
+                android:id="@+id/tv_event_details_time"
+                style="@style/TextView_Large_Blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imageView2"
+                android:gravity="center_vertical"
+                android:text="21:00 - 23:30" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:background="@color/events_details_divider_grey" />
+
+    </LinearLayout>
+
+
+    <!--&lt;!&ndash; First FAB &ndash;&gt;-->
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_anchor="@id/bottom_sheet_event_details_container"-->
+        <!--android:background="@drawable/icn_time"-->
+        <!--app:layout_anchorGravity="top|end"/>-->
+
+
+</android.support.design.widget.CoordinatorLayout>

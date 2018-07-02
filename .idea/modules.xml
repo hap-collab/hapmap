@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ageselector/ageselector.iml" filepath="$PROJECT_DIR$/ageselector/ageselector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camerakit-android-master/camerakit/camerakit.iml" filepath="$PROJECT_DIR$/camerakit-android-master/camerakit/camerakit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camerakit-android-master/camerakit-core/camerakit-core.iml" filepath="$PROJECT_DIR$/camerakit-android-master/camerakit-core/camerakit-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camerakit-android-master/camerakit-vision/camerakit-vision.iml" filepath="$PROJECT_DIR$/camerakit-android-master/camerakit-vision/camerakit-vision.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mapspocandroid.iml" filepath="$PROJECT_DIR$/mapspocandroid.iml" />
+    </modules>
+  </component>
+</project>
